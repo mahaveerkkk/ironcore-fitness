@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRONCORE FITNESS • Premium Strength Club & Athletic Performance Lab</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Syne (Ultra Bold Tech-Athletic) & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: {
+                            800: '#191D26',
+                            900: '#11141A',
+                            950: '#090A0D',
+                        },
+                        lime: {
+                            400: '#A3E635',
+                            500: '#84CC16',
+                            600: '#65A30D',
+                        },
+                        electric: {
+                            500: '#10B981',
+                            600: '#059669',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Syne', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #090A0D; }
+        .font-display { font-family: 'Syne', sans-serif; }
+        .neon-glow {
+            box-shadow: 0 0 40px -10px rgba(163, 230, 53, 0.25);
+        }
+        .card-lift {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .card-lift:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 25px 50px -15px rgba(163, 230, 53, 0.15);
+        }
+    </style>
+</head>
+<body class="text-slate-100 antialiased selection:bg-lime-400 selection:text-black">
+
+    <!-- Top Urgent Motivation Ribbon -->
+    <div class="bg-gradient-to-r from-obsidian-950 via-lime-950 to-obsidian-950 text-white text-xs py-2.5 px-4 border-b border-lime-500/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+            <div class="flex items-center justify-center gap-2">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-black bg-lime-400 text-black uppercase tracking-wider animate-pulse">LIMITED PASSES</span>
+                <span>🔥 Claim Your <strong>Free 1-Day VIP Workout Pass & InBody Scan</strong> (Worth ₹1,500)</span>
+            </div>
+            <div class="flex items-center gap-6 text-[11px] sm:text-xs text-slate-300 font-medium">
+                <span>⚡ Open 24/7 For Members • Vaishali Nagar & C-Scheme</span>
+                <a href="tel:+919876543210" class="text-lime-400 font-bold hover:underline">📞 +91 98765 43210</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Architectural Sticky Header -->
+    <header class="sticky top-0 z-40 bg-obsidian-950/90 backdrop-blur-md border-b border-slate-800 transition-all">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-lime-400 to-electric-500 flex items-center justify-center text-black font-black text-xl shadow-lg shadow-lime-400/20 group-hover:scale-105 transition-transform">
+                    ⚡
+                </div>
+                <div>
+                    <span class="font-display text-2xl font-black tracking-tight text-white block leading-none">IRONCORE</span>
+                    <span class="block text-[8px] sm:text-[9px] font-extrabold uppercase tracking-[0.3em] text-lime-400 mt-1">Strength & Athletic Lab</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-9 text-xs font-bold uppercase tracking-widest text-slate-300">
+                <a href="#zones" class="hover:text-lime-400 transition-colors">Training Zones</a>
+                <a href="#calculator" class="hover:text-lime-400 transition-colors">BMI Calculator</a>
+                <a href="#transformations" class="hover:text-lime-400 transition-colors">Results</a>
+                <a href="#coaches" class="hover:text-lime-400 transition-colors">Elite Coaches</a>
+                <a href="#membership" class="hover:text-lime-400 transition-colors">Memberships</a>
+            </nav>
+
+            <!-- Action CTAs -->
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/919876543210?text=Hello%20IRONCORE%20Gym,%20I%20want%20to%20claim%20my%20Free%201-Day%20Trial%20Pass." target="_blank" class="hidden sm:inline-flex items-center gap-2 text-xs font-bold text-slate-200 px-4 py-2 rounded-full border border-slate-700 bg-obsidian-900 hover:border-lime-400 transition-colors">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    WhatsApp Concierge
+                </a>
+                <button onclick="openModal()" class="px-6 py-2.5 rounded-full bg-lime-400 hover:bg-lime-300 text-black font-black text-xs uppercase tracking-wider shadow-lg shadow-lime-400/25 transition-all">
+                    Claim Free Pass
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Hero Section (High Energy Athletic Visual) -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Hero Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-obsidian-900 border border-lime-500/40 text-lime-400 text-xs font-bold uppercase tracking-widest shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-lime-400 animate-ping"></span>
+                        Official Eleiko & Hammer Strength Center
+                    </div>
+
+                    <h1 class="font-display text-5xl sm:text-7xl lg:text-[76px] font-black text-white tracking-tight leading-[1.05]">
+                        BUILT FOR THE <br class="hidden sm:inline">
+                        <span class="bg-gradient-to-r from-lime-400 via-electric-500 to-teal-300 bg-clip-text text-transparent">RELENTLESS FEW.</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-400 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        No crowded commercial queues. Experience an athletic performance facility equipped with Olympic calibrated barbells, Hyrox turf tracks, infrared recovery saunas, and 1-on-1 body transformation protocols.
+                    </p>
+
+                    <!-- Instant 1-Day Pass Form -->
+                    <div class="bg-obsidian-900 p-3 rounded-2xl sm:rounded-full border border-slate-800 neon-glow max-w-xl mx-auto lg:mx-0 flex flex-col sm:flex-row items-center gap-2">
+                        <div class="flex-1 w-full px-4 py-1.5 text-left">
+                            <label class="block text-[9px] font-bold uppercase tracking-wider text-slate-400">Primary Fitness Goal</label>
+                            <select id="quickGoal" class="w-full text-xs sm:text-sm font-bold text-white bg-transparent focus:outline-none cursor-pointer">
+                                <option value="Fat Loss & Muscle Shredding">Fat Loss & Muscle Shredding</option>
+                                <option value="Hypertrophy & Heavy Muscle Building">Hypertrophy & Heavy Muscle</option>
+                                <option value="Crossfit & Hyrox Conditioning">Crossfit & Functional Endurance</option>
+                                <option value="Powerlifting & Raw Strength">Powerlifting & Strength</option>
+                                <option value="Personal Trainer Transformation">1-on-1 Celebrity Personal Coaching</option>
+                            </select>
+                        </div>
+                        <div class="hidden sm:block w-[1px] h-9 bg-slate-800"></div>
+                        <div class="flex-1 w-full px-4 py-1.5 text-left">
+                            <label class="block text-[9px] font-bold uppercase tracking-wider text-slate-400">Mobile (WhatsApp)</label>
+                            <input type="tel" id="quickPhone" placeholder="Enter 10-digit number" class="w-full text-xs sm:text-sm font-semibold text-white bg-transparent focus:outline-none placeholder-slate-500">
+                        </div>
+                        <button onclick="handleQuickPass()" class="w-full sm:w-auto px-7 py-3.5 rounded-xl sm:rounded-full bg-lime-400 hover:bg-lime-300 text-black font-black text-xs uppercase tracking-wider shrink-0 transition-all flex items-center justify-center gap-2 shadow-lg shadow-lime-400/20">
+                            <span>Claim Pass</span>
+                            <span>➔</span>
+                        </button>
+                    </div>
+
+                    <!-- Trust Accolades -->
+                    <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-8 text-xs text-slate-400 font-medium">
+                        <div class="flex items-center gap-2">
+                            <span class="text-amber-400 text-sm">★★★★★</span>
+                            <span class="font-bold text-white">4.92 / 5.0</span> on Google (950+ Reviews)
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-lime-400"></span>
+                            <span>24/7 Biometric Access</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-lime-400"></span>
+                            <span>Contrast Ice Bath & Sauna</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Visual: Powerful Heavy Gym Photography -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md">
+                        
+                        <div class="rounded-3xl overflow-hidden neon-glow border border-slate-800 bg-obsidian-900 p-2.5">
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80" alt="Ironcore Gym Floor" class="w-full h-96 sm:h-[480px] object-cover rounded-2xl">
+                        </div>
+
+                        <!-- Floating Stat Badge -->
+                        <div class="absolute -bottom-6 -left-6 sm:-left-8 bg-obsidian-900/95 backdrop-blur-md p-5 rounded-2xl border border-slate-800 shadow-2xl max-w-[260px] space-y-2">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-lime-400/20 text-lime-400 flex items-center justify-center font-black text-lg">
+                                    💪
+                                </div>
+                                <div>
+                                    <div class="text-sm font-black text-white leading-tight">10,000+</div>
+                                    <div class="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Transformations</div>
+                                </div>
+                            </div>
+                            <p class="text-[11px] text-slate-400 leading-snug">
+                                Over 42,000 kg of pure fat lost across verified 90-day transformation cohorts.
+                            </p>
+                        </div>
+
+                        <!-- Floating Open 24/7 Badge -->
+                        <div class="absolute top-6 -right-4 sm:-right-6 bg-lime-400 text-black px-4 py-3 rounded-2xl shadow-xl font-black text-center">
+                            <div class="text-2xl leading-none">24/7</div>
+                            <div class="text-[9px] uppercase tracking-widest font-black mt-1">OPEN ALWAYS</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive BMI & Calorie Target Calculator -->
+    <section id="calculator" class="py-20 bg-obsidian-900 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                <span class="text-xs font-black uppercase tracking-widest text-lime-400 bg-lime-950 px-3.5 py-1.5 rounded-full border border-lime-800">Instant Science Diagnosis</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-black text-white">Body Mass & Calorie Diagnostic</h2>
+                <p class="text-slate-400 text-sm">Calculate your BMI score and see your target daily caloric intake in real-time.</p>
+            </div>
+
+            <div class="bg-obsidian-950 p-8 sm:p-10 rounded-3xl border border-slate-800 shadow-2xl grid md:grid-cols-2 gap-8 items-center">
+                
+                <!-- Inputs -->
+                <div class="space-y-5">
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                            <span>Height (cm)</span>
+                            <span id="hVal" class="text-lime-400 font-black">175 cm</span>
+                        </div>
+                        <input type="range" id="heightSlider" min="140" max="210" value="175" oninput="calcBMI()" class="w-full accent-lime-400 cursor-pointer">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                            <span>Weight (kg)</span>
+                            <span id="wVal" class="text-lime-400 font-black">72 kg</span>
+                        </div>
+                        <input type="range" id="weightSlider" min="40" max="140" value="72" oninput="calcBMI()" class="w-full accent-lime-400 cursor-pointer">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Training Experience</label>
+                        <select id="actLevel" onchange="calcBMI()" class="w-full px-4 py-3 rounded-xl bg-obsidian-900 border border-slate-700 text-white text-xs font-bold focus:outline-none focus:border-lime-400">
+                            <option value="1.3">Sedentary (Beginner • 0-1 days/wk)</option>
+                            <option value="1.55" selected>Moderate (Intermediate • 3-4 days/wk)</option>
+                            <option value="1.75">Athletic (Advanced Athlete • 5-6 days/wk)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Live Results Display -->
+                <div class="bg-obsidian-900 p-6 sm:p-8 rounded-2xl border border-slate-800 text-center space-y-4">
+                    <span class="text-xs uppercase font-extrabold tracking-widest text-slate-400">Your Current Body Diagnostic</span>
+                    
+                    <div class="flex justify-center items-baseline gap-2">
+                        <span id="bmiScore" class="font-display text-5xl font-black text-lime-400">23.5</span>
+                        <span class="text-xs text-slate-400 font-bold uppercase">BMI Score</span>
+                    </div>
+
+                    <div id="bmiCategory" class="inline-block px-4 py-1.5 rounded-full bg-emerald-500/20 text-emerald-400 font-black text-xs uppercase tracking-wider">
+                        Normal & Healthy Range
+                    </div>
+
+                    <div class="pt-3 border-t border-slate-800 flex justify-around text-xs">
+                        <div>
+                            <span class="text-slate-500 block uppercase font-bold text-[10px]">Fat Loss Calories</span>
+                            <span id="fatLossCals" class="font-black text-white text-base">1,850 kcal</span>
+                        </div>
+                        <div class="border-x border-slate-800 px-4">
+                            <span class="text-slate-500 block uppercase font-bold text-[10px]">Muscle Gain Calories</span>
+                            <span id="muscleGainCals" class="font-black text-white text-base">2,650 kcal</span>
+                        </div>
+                    </div>
+
+                    <button onclick="openModalWith('BMI Diagnostic Consultation')" class="w-full mt-2 py-3 rounded-xl bg-lime-400 hover:bg-lime-300 text-black font-black text-xs uppercase tracking-wider transition-all">
+                        Get Custom Nutrition Plan on WhatsApp ➔
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Zones (Bento Grid) -->
+    <section id="zones" class="py-24 bg-obsidian-950">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            
+            <div class="max-w-2xl mx-auto text-center mb-16 space-y-3">
+                <span class="text-xs font-black uppercase tracking-widest text-lime-400 bg-lime-950 px-3.5 py-1.5 rounded-full border border-lime-800">Elite Architecture</span>
+                <h2 class="font-display text-4xl sm:text-6xl font-black text-white">4 Dedicated Athletic Arenas</h2>
+                <p class="text-slate-400 text-sm">Separated into specialized performance ecosystems to maximize focus and training intensity.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Zone 1: Olympic Heavy Strength -->
+                <div class="bg-obsidian-900 rounded-3xl overflow-hidden border border-slate-800 card-lift group">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80" alt="Olympic Barbells" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <span class="absolute top-4 left-4 bg-lime-400 text-black font-black text-[10px] uppercase tracking-wider px-3 py-1 rounded-full">Heavy Duty</span>
+                    </div>
+                    <div class="p-7 space-y-3">
+                        <h3 class="font-display text-2xl font-bold text-white group-hover:text-lime-400 transition-colors">Olympic Powerlifting Arena</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                            Eleiko competition barbells, calibrated steel bumper plates, deadlift drop platforms, and 8 heavy-duty power racks for serious lifters.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Zone 2: Hyrox & Crossfit Turf -->
+                <div class="bg-obsidian-900 rounded-3xl overflow-hidden border border-slate-800 card-lift group">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Functional Crossfit Turf" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <span class="absolute top-4 left-4 bg-electric-500 text-black font-black text-[10px] uppercase tracking-wider px-3 py-1 rounded-full">Hyrox Track</span>
+                    </div>
+                    <div class="p-7 space-y-3">
+                        <h3 class="font-display text-2xl font-bold text-white group-hover:text-lime-400 transition-colors">Functional Crossfit Turf</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                            30-meter high-density sled turf track, Concept2 rowers and ski ergs, rogue kettlebells, wall balls, and assault air bikes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Zone 3: Ice Bath & Infrared Recovery -->
+                <div class="bg-obsidian-900 rounded-3xl overflow-hidden border border-slate-800 card-lift group">
+                    <div class="h-60 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80" alt="Cold Plunge and Sauna" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <span class="absolute top-4 left-4 bg-lime-400 text-black font-black text-[10px] uppercase tracking-wider px-3 py-1 rounded-full">Contrast Therapy</span>
+                    </div>
+                    <div class="p-7 space-y-3">
+                        <h3 class="font-display text-2xl font-bold text-white group-hover:text-lime-400 transition-colors">Recovery & Ice Bath Lab</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                            4°C commercial ice plunge tubs, Scandinavian cedarwood infrared sauna, and Normatec compression boots to flush lactic acid in minutes.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Transformations (Verified Metrics) -->
+    <section id="transformations" class="py-24 bg-obsidian-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="max-w-2xl mx-auto text-center mb-16 space-y-3">
+                <span class="text-xs font-black uppercase tracking-widest text-lime-400 bg-lime-950 px-3.5 py-1.5 rounded-full border border-lime-800">100% Proven Metrics</span>
+                <h2 class="font-display text-4xl sm:text-6xl font-black text-white">90-Day Transformation Wall</h2>
+                <p class="text-slate-400 text-sm">Real members who stopped making excuses and forged superhuman strength.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+                
+                <!-- Transformation 1 -->
+                <div class="bg-obsidian-950 rounded-3xl p-6 border border-slate-800 space-y-4">
+                    <div class="aspect-[16/10] overflow-hidden rounded-2xl relative">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80" alt="Member Transformation" class="w-full h-full object-cover">
+                        <span class="absolute bottom-3 left-3 bg-black/80 backdrop-blur-md text-lime-400 text-[10px] font-black uppercase px-3 py-1 rounded-full">
+                            -16 kg Fat • +4.2 kg Muscle Mass
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-slate-400 pt-1">
+                        <div>
+                            <span class="font-black text-white text-sm block">Aman Saxena (IT Director)</span>
+                            <span class="text-[11px] text-slate-500">Coach: Rohit Rana • 90-Day Shred Cohort</span>
+                        </div>
+                        <span class="text-lime-400 font-black">Verified Dexa Scan ✓</span>
+                    </div>
+                </div>
+
+                <!-- Transformation 2 -->
+                <div class="bg-obsidian-950 rounded-3xl p-6 border border-slate-800 space-y-4">
+                    <div class="aspect-[16/10] overflow-hidden rounded-2xl relative">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Female Athlete Transformation" class="w-full h-full object-cover">
+                        <span class="absolute bottom-3 left-3 bg-black/80 backdrop-blur-md text-lime-400 text-[10px] font-black uppercase px-3 py-1 rounded-full">
+                            From 29% ➔ 18% Body Fat • Marathon Finisher
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-slate-400 pt-1">
+                        <div>
+                            <span class="font-black text-white text-sm block">Sneha Choudhary (Entrepreneur)</span>
+                            <span class="text-[11px] text-slate-500">Coach: Tanvi Rawat • Hyrox Athlete Track</span>
+                        </div>
+                        <span class="text-lime-400 font-black">Verified Dexa Scan ✓</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparent Memberships (Transparent Pricing) -->
+    <section id="membership" class="py-24 bg-obsidian-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="max-w-2xl mx-auto text-center mb-16 space-y-3">
+                <span class="text-xs font-black uppercase tracking-widest text-lime-400 bg-lime-950 px-3.5 py-1.5 rounded-full border border-lime-800">Clear Pricing</span>
+                <h2 class="font-display text-4xl sm:text-6xl font-black text-white">Invest in Your Power</h2>
+                <p class="text-slate-400 text-sm">All plans include 24/7 keycard access, free locker, and unlimited steam/sauna recovery.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Tier 1 -->
+                <div class="bg-obsidian-900 rounded-3xl p-8 border border-slate-800 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Monthly Flexibility</span>
+                        <h4 class="font-display text-2xl font-black text-white">1-Month Flex</h4>
+                        <div class="text-3xl font-display font-black text-white">₹2,999 <span class="text-xs font-sans text-slate-400 font-normal">/ month</span></div>
+                        <ul class="text-xs text-slate-300 space-y-3 pt-2">
+                            <li class="flex items-center gap-2">✓ Full 24/7 Access to all 4 training zones</li>
+                            <li class="flex items-center gap-2">✓ 1 Free InBody 570 Composition Scan</li>
+                            <li class="flex items-center gap-2">✓ Unlimited Steam & Shower Lockers</li>
+                            <li class="flex items-center gap-2">✓ Free Parking & High-Speed WiFi</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModalWith('1-Month Flex Plan')" class="w-full py-3.5 rounded-full bg-slate-800 hover:bg-slate-700 text-white font-black text-xs uppercase tracking-wider transition-all">
+                        Join 1-Month Plan
+                    </button>
+                </div>
+
+                <!-- Tier 2: Highlighted -->
+                <div class="bg-gradient-to-b from-obsidian-900 to-obsidian-950 rounded-3xl p-8 border-2 border-lime-400 flex flex-col justify-between space-y-6 relative shadow-2xl neon-glow">
+                    <span class="absolute -top-3.5 right-6 bg-lime-400 text-black text-[10px] font-black uppercase tracking-wider px-3.5 py-1 rounded-full">Most Popular</span>
+                    <div class="space-y-4">
+                        <span class="text-xs font-bold text-lime-400 uppercase tracking-widest">3-Month Transformation</span>
+                        <h4 class="font-display text-3xl font-black text-white">Power Quarter</h4>
+                        <div class="text-3xl font-display font-black text-lime-400">₹6,999 <span class="text-xs font-sans text-slate-400 font-normal">(₹2,333/mo)</span></div>
+                        <ul class="text-xs text-slate-200 space-y-3 pt-2">
+                            <li class="flex items-center gap-2">✓ Everything in Monthly Access</li>
+                            <li class="flex items-center gap-2">✓ 3 InBody Scans & Diet Macro Consult</li>
+                            <li class="flex items-center gap-2">✓ 2 Free Personal Training Sessions</li>
+                            <li class="flex items-center gap-2">✓ Unlimited Ice Bath & Sauna Sessions</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModalWith('Power Quarter (3 Months)')" class="w-full py-3.5 rounded-full bg-lime-400 hover:bg-lime-300 text-black font-black text-xs uppercase tracking-wider transition-all shadow-lg">
+                        Claim Power Quarter ➔
+                    </button>
+                </div>
+
+                <!-- Tier 3: Annual Immortal -->
+                <div class="bg-obsidian-900 rounded-3xl p-8 border border-slate-800 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Annual Best Value</span>
+                        <h4 class="font-display text-2xl font-black text-white">Immortal Annual</h4>
+                        <div class="text-3xl font-display font-black text-white">₹18,500 <span class="text-xs font-sans text-slate-400 font-normal">/ yr (0% EMI ₹1,540/mo)</span></div>
+                        <ul class="text-xs text-slate-300 space-y-3 pt-2">
+                            <li class="flex items-center gap-2">✓ Full 365 Days 24/7 Access</li>
+                            <li class="flex items-center gap-2">✓ 60 Days Vacation Membership Freeze</li>
+                            <li class="flex items-center gap-2">✓ 6 Guest Passes per year</li>
+                            <li class="flex items-center gap-2">✓ Ironcore Athlete Jersey & Gym Kit</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModalWith('Immortal Annual Plan')" class="w-full py-3.5 rounded-full bg-slate-800 hover:bg-slate-700 text-white font-black text-xs uppercase tracking-wider transition-all">
+                        Join Annual Plan
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-obsidian-950 text-slate-500 py-12 border-t border-slate-800 text-xs">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+                <span class="font-display text-white text-xl font-black">IRONCORE FITNESS</span>
+                <p class="text-slate-500 text-[11px] mt-0.5">© 2026 Ironcore Athletic Performance Club Pvt. Ltd. All rights reserved.</p>
+            </div>
+            <div class="flex gap-6 text-slate-400 text-xs">
+                <a href="#zones" class="hover:text-lime-400">Arenas</a>
+                <a href="#calculator" class="hover:text-lime-400">BMI Calculator</a>
+                <a href="#transformations" class="hover:text-lime-400">Results</a>
+                <a href="javascript:void(0)" onclick="openModal()" class="hover:text-white font-bold text-lime-400">Claim Free Pass</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="fixed bottom-0 inset-x-0 bg-obsidian-950/95 backdrop-blur-md border-t border-slate-800 py-3 px-4 flex items-center justify-between gap-3 sm:hidden z-50 shadow-2xl">
+        <a href="tel:+919876543210" class="flex-1 py-3 rounded-full bg-slate-800 text-white font-black text-xs flex items-center justify-center gap-2 border border-slate-700">
+            <span>📞 Call Gym</span>
+        </a>
+        <a href="https://wa.me/919876543210?text=Hello%20IRONCORE%20Gym,%20I%20want%20to%20claim%20my%20Free%201-Day%20Trial%20Pass." target="_blank" class="flex-1 py-3 rounded-full bg-lime-400 text-black font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-lime-400/20">
+            <span>💬 Free Day Pass</span>
+        </a>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-obsidian-900 rounded-3xl max-w-md w-full p-6 sm:p-8 relative border border-slate-800 neon-glow animate-in fade-in zoom-in duration-200">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white p-1 font-bold text-lg">
+                ✕
+            </button>
+            <div class="text-center mb-6 space-y-1">
+                <span class="text-[10px] font-black uppercase tracking-widest text-lime-400">VIP Pass Desk</span>
+                <h3 class="font-display text-2xl text-white font-black">Claim 1-Day Workout Pass</h3>
+                <p class="text-xs text-slate-400">Confirmed on WhatsApp within 10 minutes.</p>
+            </div>
+
+            <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 mb-1">Your Full Name</label>
+                    <input type="text" id="mName" required placeholder="e.g. Vikram Rana" class="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-slate-700 text-white focus:outline-none focus:border-lime-400 text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 mb-1">WhatsApp Mobile Number</label>
+                    <input type="tel" id="mPhone" required placeholder="e.g. 9876543210" class="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-slate-700 text-white focus:outline-none focus:border-lime-400 text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 mb-1">Fitness Goal / Membership Plan</label>
+                    <input type="text" id="mPlan" placeholder="e.g. 1-Day Free Trial, Fat Loss, Power Quarter" class="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-slate-700 text-white focus:outline-none focus:border-lime-400 text-sm">
+                </div>
+                <button type="submit" class="w-full py-4 rounded-full bg-lime-400 hover:bg-lime-300 text-black font-black text-xs tracking-wider uppercase transition-all shadow-lg">
+                    Confirm & Send to WhatsApp ➔
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Interactive Scripts -->
+    <script>
+        function openModal() {
+            document.getElementById('bookingModal').classList.remove('hidden');
+        }
+
+        function openModalWith(plan) {
+            document.getElementById('mPlan').value = plan;
+            openModal();
+        }
+
+        function closeModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+        }
+
+        function handleQuickPass() {
+            const goal = document.getElementById('quickGoal').value;
+            const phone = document.getElementById('quickPhone').value;
+            if (!phone) {
+                alert('Please enter your WhatsApp mobile number.');
+                return;
+            }
+            const msg = `Hello IRONCORE Fitness, I want to claim my Free 1-Day VIP Workout Pass.\nGoal: ${goal}\nPhone: ${phone}`;
+            const url = `https://wa.me/919876543210?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+        }
+
+        function handleModalSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('mName').value;
+            const phone = document.getElementById('mPhone').value;
+            const plan = document.getElementById('mPlan').value || '1-Day Free VIP Pass';
+            
+            const msg = `Hello IRONCORE Fitness, I want to reserve my VIP membership pass.\nName: ${name}\nPhone: ${phone}\nPlan: ${plan}`;
+            const url = `https://wa.me/919876543210?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+            closeModal();
+        }
+
+        function calcBMI() {
+            const h = parseFloat(document.getElementById('heightSlider').value);
+            const w = parseFloat(document.getElementById('weightSlider').value);
+            const act = parseFloat(document.getElementById('actLevel').value);
+
+            document.getElementById('hVal').innerText = h + ' cm';
+            document.getElementById('wVal').innerText = w + ' kg';
+
+            const heightM = h / 100;
+            const bmi = (w / (heightM * heightM)).toFixed(1);
+            document.getElementById('bmiScore').innerText = bmi;
+
+            const cat = document.getElementById('bmiCategory');
+            if (bmi < 18.5) {
+                cat.innerText = 'Underweight • Focus on Hypertrophy';
+                cat.className = 'inline-block px-4 py-1.5 rounded-full bg-amber-500/20 text-amber-400 font-black text-xs uppercase tracking-wider';
+            } else if (bmi <= 24.9) {
+                cat.innerText = 'Optimal Athletic Range';
+                cat.className = 'inline-block px-4 py-1.5 rounded-full bg-emerald-500/20 text-emerald-400 font-black text-xs uppercase tracking-wider';
+            } else if (bmi <= 29.9) {
+                cat.innerText = 'Slight Overweight • Lean Shred Program';
+                cat.className = 'inline-block px-4 py-1.5 rounded-full bg-amber-500/20 text-amber-400 font-black text-xs uppercase tracking-wider';
+            } else {
+                cat.innerText = 'High Body Fat • Accelerated Deficit';
+                cat.className = 'inline-block px-4 py-1.5 rounded-full bg-rose-500/20 text-rose-400 font-black text-xs uppercase tracking-wider';
+            }
+
+            // Estimate BMR & TDEE
+            const bmr = (10 * w) + (6.25 * h) - (5 * 25) + 5;
+            const tdee = bmr * act;
+            document.getElementById('fatLossCals').innerText = Math.round(tdee - 500) + ' kcal';
+            document.getElementById('muscleGainCals').innerText = Math.round(tdee + 300) + ' kcal';
+        }
+    </script>
+</body>
+</html>

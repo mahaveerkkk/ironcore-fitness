@@ -54,36 +54,39 @@
         }
     </style>
 </head>
-<body class="text-slate-100 antialiased selection:bg-lime-400 selection:text-black">
+<body class="text-slate-100 antialiased selection:bg-lime-400 selection:text-black overflow-x-hidden">
 
-    <!-- Top Urgent Motivation Ribbon -->
-    <div class="bg-gradient-to-r from-obsidian-950 via-lime-950 to-obsidian-950 text-white text-xs py-2.5 px-4 border-b border-lime-500/30">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
-            <div class="flex items-center justify-center gap-2">
-                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-black bg-lime-400 text-black uppercase tracking-wider">LIMITED PASSES</span>
-                <span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-lime-400 animate-ping"></span>Claim Your <strong>Free 1-Day VIP Workout Pass & InBody Scan</strong> (Worth ₹1,500)</span>
+    <!-- Top Performance Announcement Bar (Ultra Clean Single Line on Mobile) -->
+    <div class="bg-gradient-to-r from-obsidian-950 via-lime-950/80 to-obsidian-950 text-white py-1.5 sm:py-2 px-3 sm:px-4 border-b border-lime-500/25">
+        <div class="max-w-7xl mx-auto flex items-center justify-between text-[11px] sm:text-xs">
+            <div class="flex items-center gap-2 mx-auto sm:mx-0">
+                <span class="inline-block w-1.5 h-1.5 rounded-full bg-lime-400 animate-ping"></span>
+                <span class="font-medium text-slate-200">Free 1-Day VIP Pass & InBody Scan</span>
+                <span class="text-slate-500">•</span>
+                <span class="text-lime-400 font-bold uppercase tracking-wider">Open 24/7</span>
+                <button onclick="openModal()" class="text-lime-400 underline font-bold hover:text-lime-300 ml-1">Claim &rarr;</button>
             </div>
-            <div class="flex items-center gap-6 text-[11px] sm:text-xs text-slate-300 font-medium">
-                <span>Open 24/7 For Members • Vaishali Nagar & C-Scheme</span>
-                <a href="tel:+919528582084" class="text-lime-400 font-bold hover:underline">Direct Line: +91 95285 82084</a>
+            <div class="hidden sm:flex items-center gap-4 text-slate-400 text-xs">
+                <span>Vaishali Nagar & C-Scheme</span>
+                <a href="tel:+919528582084" class="text-lime-400 font-semibold hover:underline">Direct: +91 95285 82084</a>
             </div>
         </div>
     </div>
 
-    <!-- Architectural Sticky Header -->
-    <header class="sticky top-0 z-40 bg-obsidian-950/90 backdrop-blur-md border-b border-slate-800 transition-all">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
+    <!-- Architectural Sticky Header (Optimized for Mobile & Desktop) -->
+    <header class="sticky top-0 z-40 bg-obsidian-950/95 backdrop-blur-xl border-b border-slate-800/80 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
             
             <!-- Logo -->
-            <a href="#" class="flex items-center gap-3.5 group">
-                <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-lime-400 to-lime-500 flex items-center justify-center text-black shadow-lg shadow-lime-400/20 group-hover:scale-105 transition-transform">
-                    <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
+            <a href="#" class="flex items-center gap-2.5 sm:gap-3.5 group">
+                <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-lime-400 to-lime-500 flex items-center justify-center text-black shadow-lg shadow-lime-400/20 group-hover:scale-105 transition-transform shrink-0">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 5.57 14.14 14.14 5.57 17.71 9.14 19.14 7.71 20.57 9.14 22 7.71l-1.43-1.43z"/>
                     </svg>
                 </div>
                 <div>
-                    <span class="font-display text-2xl font-black tracking-tight text-white block leading-none">IRONCORE</span>
-                    <span class="block text-[8px] sm:text-[9px] font-extrabold uppercase tracking-[0.3em] text-lime-400 mt-1">Athletic Performance Lab</span>
+                    <span class="font-display text-lg sm:text-2xl font-black tracking-tight text-white block leading-none">IRONCORE</span>
+                    <span class="block text-[7px] sm:text-[9px] font-extrabold uppercase tracking-[0.25em] text-lime-400 mt-0.5 sm:mt-1">Performance Lab</span>
                 </div>
             </a>
 
@@ -97,13 +100,14 @@
             </nav>
 
             <!-- Action CTAs -->
-            <div class="flex items-center gap-4">
-                <a href="https://wa.me/919876543210?text=Hello%20IRONCORE%20Gym,%20I%20want%20to%20claim%20my%20Free%201-Day%20Trial%20Pass." target="_blank" class="hidden sm:inline-flex items-center gap-2 text-xs font-bold text-slate-200 px-4 py-2 rounded-full border border-slate-700 bg-obsidian-900 hover:border-lime-400 transition-colors">
+            <div class="flex items-center gap-2 sm:gap-4">
+                <a href="https://wa.me/919528582084?text=Hello%20IRONCORE%20Gym,%20I%20want%20to%20claim%20my%20Free%201-Day%20Trial%20Pass." target="_blank" class="hidden md:inline-flex items-center gap-2 text-xs font-bold text-slate-200 px-4 py-2 rounded-full border border-slate-700 bg-obsidian-900 hover:border-lime-400 transition-colors">
                     <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                    WhatsApp Concierge
+                    WhatsApp
                 </a>
-                <button onclick="openModal()" class="px-6 py-2.5 rounded-full bg-lime-400 hover:bg-lime-300 text-black font-black text-xs uppercase tracking-wider shadow-lg shadow-lime-400/25 transition-all">
-                    Claim Free Pass
+                <button onclick="openModal()" class="px-3.5 py-2 sm:px-6 sm:py-2.5 rounded-full bg-lime-400 hover:bg-lime-300 text-black font-black text-[11px] sm:text-xs uppercase tracking-wider shadow-lg shadow-lime-400/25 active:scale-95 transition-all">
+                    <span class="sm:hidden">Free Pass</span>
+                    <span class="hidden sm:inline">Claim Free Pass</span>
                 </button>
             </div>
 
@@ -111,30 +115,30 @@
     </header>
 
     <!-- Hero Section (High Energy Athletic Visual) -->
-    <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+    <section class="relative pt-6 pb-14 sm:pt-16 sm:pb-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-8 lg:gap-8 items-center">
                 
                 <!-- Left Hero Text -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="lg:col-span-7 space-y-4 sm:space-y-6 text-center lg:text-left">
                     
-                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-obsidian-900 border border-lime-500/40 text-lime-400 text-xs font-bold uppercase tracking-widest shadow-inner">
-                        <span class="w-2 h-2 rounded-full bg-lime-400 animate-ping"></span>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-obsidian-900 border border-lime-500/40 text-lime-400 text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest shadow-inner">
+                        <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-lime-400 animate-ping"></span>
                         Official Eleiko & Hammer Strength Center
                     </div>
 
-                    <h1 class="font-display text-5xl sm:text-7xl lg:text-[76px] font-black text-white tracking-tight leading-[1.05]">
+                    <h1 class="font-display text-3xl sm:text-6xl lg:text-[76px] font-black text-white tracking-tight leading-[1.1] sm:leading-[1.05]">
                         BUILT FOR THE <br class="hidden sm:inline">
                         <span class="bg-gradient-to-r from-lime-400 via-electric-500 to-teal-300 bg-clip-text text-transparent">RELENTLESS FEW.</span>
                     </h1>
 
-                    <p class="text-base sm:text-lg text-slate-400 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    <p class="text-sm sm:text-lg text-slate-400 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
                         No crowded commercial queues. Experience an athletic performance facility equipped with Olympic calibrated barbells, Hyrox turf tracks, infrared recovery saunas, and 1-on-1 body transformation protocols.
                     </p>
 
                     <!-- Instant 1-Day Pass Form -->
-                    <div class="bg-obsidian-900 p-3 rounded-2xl sm:rounded-full border border-slate-800 neon-glow max-w-xl mx-auto lg:mx-0 flex flex-col sm:flex-row items-center gap-2">
-                        <div class="flex-1 w-full px-4 py-1.5 text-left">
+                    <div class="bg-obsidian-900 p-2.5 sm:p-3 rounded-2xl sm:rounded-full border border-slate-800 neon-glow max-w-xl mx-auto lg:mx-0 flex flex-col sm:flex-row items-center gap-2">
+                        <div class="flex-1 w-full px-3 sm:px-4 py-1.5 text-left">
                             <label class="block text-[9px] font-bold uppercase tracking-wider text-slate-400">Primary Fitness Goal</label>
                             <select id="quickGoal" class="w-full text-xs sm:text-sm font-bold text-white bg-transparent focus:outline-none cursor-pointer">
                                 <option value="Fat Loss & Muscle Shredding">Fat Loss & Muscle Shredding</option>
@@ -145,65 +149,65 @@
                             </select>
                         </div>
                         <div class="hidden sm:block w-[1px] h-9 bg-slate-800"></div>
-                        <div class="flex-1 w-full px-4 py-1.5 text-left">
+                        <div class="flex-1 w-full px-3 sm:px-4 py-1.5 text-left">
                             <label class="block text-[9px] font-bold uppercase tracking-wider text-slate-400">Mobile (WhatsApp)</label>
                             <input type="tel" id="quickPhone" placeholder="Enter 10-digit number" class="w-full text-xs sm:text-sm font-semibold text-white bg-transparent focus:outline-none placeholder-slate-500">
                         </div>
-                        <button onclick="handleQuickPass()" class="w-full sm:w-auto px-7 py-3.5 rounded-xl sm:rounded-full bg-lime-400 hover:bg-lime-300 text-black font-black text-xs uppercase tracking-wider shrink-0 transition-all flex items-center justify-center gap-2 shadow-lg shadow-lime-400/20">
+                        <button onclick="handleQuickPass()" class="w-full sm:w-auto px-6 py-3 sm:px-7 sm:py-3.5 rounded-xl sm:rounded-full bg-lime-400 hover:bg-lime-300 text-black font-black text-xs uppercase tracking-wider shrink-0 transition-all flex items-center justify-center gap-2 shadow-lg shadow-lime-400/20 active:scale-95">
                             <span>Claim Pass</span>
                             <span>➔</span>
                         </button>
                     </div>
 
                     <!-- Trust Accolades -->
-                    <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-8 text-xs text-slate-400 font-medium">
+                    <div class="pt-2 sm:pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-8 text-xs text-slate-400 font-medium">
                         <div class="flex items-center gap-2">
                             <span class="text-amber-400 text-sm">★★★★★</span>
-                            <span class="font-bold text-white">4.92 / 5.0</span> on Google (950+ Reviews)
+                            <span class="font-bold text-white">4.92 / 5.0</span> on Google
                         </div>
                         <div class="flex items-center gap-1.5">
                             <span class="w-2 h-2 rounded-full bg-lime-400"></span>
-                            <span>24/7 Biometric Access</span>
+                            <span>24/7 Access</span>
                         </div>
                         <div class="flex items-center gap-1.5">
                             <span class="w-2 h-2 rounded-full bg-lime-400"></span>
-                            <span>Contrast Ice Bath & Sauna</span>
+                            <span>Ice Bath & Sauna</span>
                         </div>
                     </div>
 
                 </div>
 
                 <!-- Right Visual: Powerful Heavy Gym Photography -->
-                <div class="lg:col-span-5 relative">
-                    <div class="relative mx-auto max-w-md">
+                <div class="lg:col-span-5 relative mt-4 sm:mt-0">
+                    <div class="relative mx-auto max-w-md px-1 sm:px-0">
                         
-                        <div class="rounded-3xl overflow-hidden neon-glow border border-slate-800 bg-obsidian-900 p-2.5">
-                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80" alt="Ironcore Gym Floor" class="w-full h-96 sm:h-[480px] object-cover rounded-2xl">
+                        <div class="rounded-3xl overflow-hidden neon-glow border border-slate-800 bg-obsidian-900 p-2 sm:p-2.5">
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80" alt="Ironcore Gym Floor" class="w-full h-80 sm:h-[480px] object-cover rounded-2xl">
                         </div>
 
                         <!-- Floating Stat Badge -->
-                        <div class="absolute -bottom-6 -left-6 sm:-left-8 bg-obsidian-950/90 backdrop-blur-xl p-5 rounded-2xl border border-slate-800 shadow-2xl max-w-[260px] space-y-2">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-xl bg-lime-400/10 border border-lime-400/20 text-lime-400 flex items-center justify-center">
-                                    <svg class="w-5 h-5 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        <div class="absolute -bottom-4 left-2 sm:-bottom-6 sm:-left-8 bg-obsidian-950/95 backdrop-blur-xl p-3 sm:p-5 rounded-2xl border border-slate-800 shadow-2xl max-w-[210px] sm:max-w-[260px] space-y-1 sm:space-y-2">
+                            <div class="flex items-center gap-2.5 sm:gap-3">
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-lime-400/10 border border-lime-400/20 text-lime-400 flex items-center justify-center shrink-0">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                                 </div>
                                 <div>
-                                    <div class="text-sm font-black text-white leading-tight">10,000+</div>
-                                    <div class="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Transformations</div>
+                                    <div class="text-xs sm:text-sm font-black text-white leading-tight">10,000+</div>
+                                    <div class="text-[9px] sm:text-[10px] text-slate-400 uppercase font-bold tracking-wider">Transformations</div>
                                 </div>
                             </div>
-                            <p class="text-[11px] text-slate-400 leading-snug">
-                                Over 42,000 kg of pure fat lost across verified 90-day transformation cohorts.
+                            <p class="text-[10px] sm:text-[11px] text-slate-400 leading-snug">
+                                Over 42,000 kg fat lost across verified 90-day cohorts.
                             </p>
                         </div>
 
                         <!-- Floating Top-Right Performance Badge -->
-                        <div class="absolute top-6 -right-4 sm:-right-6 bg-obsidian-950/90 backdrop-blur-xl border border-lime-400/40 px-4 py-3 rounded-2xl shadow-2xl">
-                            <div class="flex items-center gap-2">
-                                <span class="w-2 h-2 rounded-full bg-lime-400 animate-ping"></span>
-                                <span class="text-xs font-black text-white uppercase tracking-wider">Access 24/7</span>
+                        <div class="absolute top-4 right-2 sm:top-6 sm:-right-6 bg-obsidian-950/95 backdrop-blur-xl border border-lime-400/40 px-3 py-2 sm:px-4 sm:py-3 rounded-xl sm:rounded-2xl shadow-2xl">
+                            <div class="flex items-center gap-1.5 sm:gap-2">
+                                <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-lime-400 animate-ping"></span>
+                                <span class="text-[11px] sm:text-xs font-black text-white uppercase tracking-wider">Access 24/7</span>
                             </div>
-                            <div class="text-[9px] text-lime-400 font-extrabold uppercase tracking-widest mt-0.5">Biometric Keycard</div>
+                            <div class="text-[8px] sm:text-[9px] text-lime-400 font-extrabold uppercase tracking-widest mt-0.5">Biometric Keycard</div>
                         </div>
 
                     </div>
